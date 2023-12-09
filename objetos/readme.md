@@ -1,4 +1,5 @@
 # Objetos em JavaScript: Resumo
+
 ## Introdução
 
 Os objetos em JavaScript são estruturas fundamentais que permitem armazenar dados complexos e funcionalidades em um único lugar. Neste guia, exploraremos os conceitos fundamentais dos objetos em JavaScript e como utilizá-los de forma eficaz.
@@ -7,8 +8,9 @@ Os objetos em JavaScript são estruturas fundamentais que permitem armazenar dad
 
 Em JavaScript, os objetos são criados usando a sintaxe de chaves `{}` para delimitar o início e o fim do objeto. Cada par chave-valor é separado por vírgula.
 
+### Exemplo 1: criação básica de um objeto
+
 ```javascript
-// Exemplo de um objeto
 let pessoa = {
     nome: 'Alice',
     idade: 25,
@@ -16,13 +18,37 @@ let pessoa = {
 };
 ```
 
+### Exemplo 2: exemplo de um objeto com um objeto aninhado
+
+```javascript
+let pessoa = {
+    nome: 'Alice',
+    idade: 25,
+    endereco: {
+        rua: 'Rua Principal',
+        cidade: 'Exemplo City',
+        pais: 'Exemplo Country'
+    }
+};
+```
+
 ## Acessando Propriedades
 
 As propriedades de um objeto podem ser acessadas usando a notação de ponto `objeto.propriedade` ou a notação de colchetes `objeto['propriedade']`.
 
+### Acessando propriedades do Exemplo 1
+
 ```javascript
 console.log(pessoa.nome); // Saída: Alice
 console.log(pessoa['idade']); // Saída: 25
+```
+
+### Acessando propriedades do Exemplo 2
+
+```javascript
+console.log(pessoa.endereco.rua); // Saída: Rua Principal
+console.log(pessoa.endereco.cidade); // Saída: Exemplo City
+console.log(pessoa.endereco.pais); // Saída: Exemplo Country
 ```
 
 ## Adicionando e Alterando Propriedades
@@ -86,4 +112,5 @@ Os objetos em JavaScript podem ser usados para encapsular dados e comportamentos
 Os objetos em JavaScript são poderosos e versáteis, permitindo representar dados e funcionalidades de forma estruturada. Este guia oferece uma visão completa dos conceitos fundamentais de criação, acesso, adição, remoção, iteração, métodos e encapsulamento em objetos JavaScript.
 
 ## Autora
+
 Juliana Chaves Palm
